@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img alt="Logo" src="./public/images/logo.svg" alt="ig.News">
+  <img alt="Logo" src="./public/logo.svg" alt="ig.News">
 </h1>
 
 <h1 align="center">
-    ig.News - Next.js
+    spacetraveling - Next.js
 </h1>
 <p align="center">Newsletter subscription application with payment via stripe</p>
 
@@ -23,7 +23,7 @@
 
 ## 💻 What's in the project?
 
-- Very clean front-end, developed following the proposal in [Figma](https://www.figma.com/file/0Y26j0tf1K2WB5c1ja5hov/Desafios-M%C3%B3dulo-3-ReactJS?node-id=0%3A1) .
+- Very clean front-end, developed following the proposal in [Figma](<https://www.figma.com/file/9bsooUfTO2CWh3hpeTK2px/Desafios-M%C3%B3dulo-3-ReactJS-(Copy)>) .
 - Integration with Prismic CMS, to work with every part of the blog system.
 - Integration with Prismic's Preview system, where it is possible to see an unpublished post within the blog, even before it goes live.
 - Use of Next.js static system, where posts are kept in cache for better loading.
