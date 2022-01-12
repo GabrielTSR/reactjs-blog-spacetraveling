@@ -9,6 +9,8 @@ import { FiCalendar, FiUser } from 'react-icons/fi';
 import styles from './home.module.scss';
 import { RichText } from 'prismic-dom';
 import { useEffect, useState } from 'react';
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 interface Post {
   uid?: string;
@@ -52,13 +54,13 @@ export default function Home({ postsPagination }: HomeProps) {
     const newPosts = postsResults.results.map(post => {
       return {
         uid: post.uid,
-        first_publication_date: new Date(
-          post.first_publication_date
-        ).toLocaleDateString('pt-BR', {
-          day: '2-digit',
-          month: 'short',
-          year: 'numeric',
-        }),
+        first_publication_date: format(
+          new Date(post.first_publication_date),
+          'dd MMM yyyy',
+          {
+            locale: ptBR,
+          }
+        ),
         data: {
           title: RichText.asText(post.data['title']),
           subtitle: RichText.asText(post.data['subtitle']),

@@ -1,5 +1,5 @@
 .headerContainer {
-  height: 5rem;
+  height: 6rem;
   border-bottom: 1px solid var(--gray-800);
   position: fixed;
   top: 0;
@@ -10,11 +10,11 @@
 
 .headerContent {
   max-width: 800px;
-  height: 5rem;
+  height: 8rem;
   margin: 0 auto;
   padding: 0 2rem;
 
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding-bottom: 5px;
 }

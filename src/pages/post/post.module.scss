@@ -21,6 +21,27 @@
   margin: 5rem auto 0;
   padding-bottom: 2rem;
 
+  aside {
+    margin: 0 auto;
+    width: 20rem;
+    height: 4rem;
+    background-color: #737380;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    transition: filter 0.2s;
+
+    a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
   h1 {
     display: block;
     font-size: 3rem;
@@ -30,7 +51,7 @@
     text-align: center;
   }
 
-  > div {
+  .postDetailsContainer {
     display: flex;
     align-items: center;
     margin-top: 2.6rem;
@@ -49,6 +70,17 @@
     }
   }
 
+  .editPostDateContainer {
+    margin-top: 1rem;
+    time {
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--gray);
+    }
+  }
+
   article {
     h2 {
       margin-top: 5rem;
@@ -60,6 +92,19 @@
 
       * {
         color: var(--gray);
+      }
+
+      strong {
+        color: var(--white);
+      }
+
+      a {
+        color: var(--pink);
+        margin-left: 0.5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       p,
@@ -77,6 +122,46 @@
 
         li {
           margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+
+  .changePageContainer {
+    display: flex;
+    padding-top: 3rem;
+    margin-top: 2rem;
+    border-top: solid 1px #494949;
+
+    div {
+      min-width: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h6 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: auto;
+        max-width: 90%;
+        text-align: justify;
+      }
+
+      a {
+        margin-top: 1.6rem;
+        color: var(--pink);
+
+        transition: text-decoration 0.2s;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &.nextPage {
+        align-items: flex-end;
+        * {
+          text-align: end;
         }
       }
     }
